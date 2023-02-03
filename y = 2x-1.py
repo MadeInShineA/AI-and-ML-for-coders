@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense
+from keras import Sequential
+from keras.layers import Dense
 
 model = Sequential([Dense(units=1, input_shape=[1])])
 model.compile(optimizer="sgd", loss="mean_squared_error")
